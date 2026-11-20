@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="alternate" hreflang="en" href="loops-en.html"><link rel="alternate" hreflang="zh-CN" href="loops.html"><link rel="alternate" hreflang="ja" href="loops-ja.html"><title>一枚早餐鸡蛋与软件交付的瓶颈 · LovePoteto</title><link rel="stylesheet" href="style.css?v=cdfe226796"></head>
+<body><header><a class="brand" href="index-zh.html"><b aria-hidden="true">♥</b>Love poteto</a>
+<nav aria-label="栏目"><a href="index-zh.html#articles" >文章精读</a>
+<a href="screenings.html" >演讲放映室</a>
+<a href="index-zh.html#life" >人物履历</a></nav><div class="lang" aria-label="语言"><a href="loops-en.html" lang="en" hreflang="en" >EN</a><a href="loops.html" lang="zh-CN" hreflang="zh-CN" aria-current="page">中文</a><a href="loops-ja.html" lang="ja" hreflang="ja" >日本語</a></div></header>
+<main><article class="reading">
+<a href="index-zh.html#articles" >返回精读室</a><p class="meta"><time>2026-06-25</time> · Lauren Tan · X</p>
+<h1>一枚早餐鸡蛋与软件交付的瓶颈</h1><div lang="en">Loops You Can Trust</div>
+<img class="cover" src="assets/covers/loops.jpg" alt="" loading="eager" decoding="async">
+<h2>从哪里读起</h2><p>早餐店得同时端出鸡蛋、吐司和咖啡。煮蛋需要三分钟，无论吐司机有多快，整份早餐都有一道绕不过去的工序。Lauren 借 Andy Grove 的例子问：在 Agent 写软件的流程里，哪一步让后面所有工作都得等？</p>
+<h2>再看一个细节</h2><p>她在 Cursor 的性能排查里找到了一个答案。Agent 得能启动开发版、重现用户遇到的操作、记录性能，再于改动后重测。让它接触到工程师判断问题时使用的信号，才有条件把人工排查变成可重复的流程。</p>
+<h2>一次像素对齐的迁移，仍然漏掉了什么</h2><p>她把共享 UI 库迁到 StyleX 时，采样画面看起来一致，内部试用却发现了层叠顺序和全局样式依赖的问题。下一轮每次只迁一个叶子组件，删除样式前先查谁还在使用它。这个改动既缩小了影响范围，也让失败更容易追溯到一个具体选择。</p>
+<aside class="editor"><h2>编者手记</h2><p>如果一次重测没有重现原始问题，这次结果该写成「证据不足」。让流程能在这里停下来，是放心把下一次任务交给它的前提。</p></aside>
+<div class="source"><a href="https://x.com/poteto/status/2069824386283319343" >阅读 X 原文</a><a href="https://threadnavigator.com/thread/2069824386283319343/" >英文正文镜像</a></div>
+<hr><p>接着读 · <a href="cursor.html" >当工程经理开始带一组 Agent</a></p></article></main><footer><p>LovePoteto · 一个热爱 poteto 的粉丝维护的小百科</p>
+<p><a href="https://x.com/poteto" >X · @poteto</a>　 <a href="https://github.com/poteto" >GitHub</a></p></footer></body></html>

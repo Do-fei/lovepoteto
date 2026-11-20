@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "O_zcc6Xl12g",
+    "event": "2026 · AI Engineer CODE",
+    "title": "All Code Is Slop (Except Mine)",
+    "zh": "当一次评审意见会在几百个改动里反复出现，Lauren 会追问：哪个接口允许这个错误不断发生？她用桌面应用 Dune 的模块边界和 React 副作用举例，再展示团队交给审查者的运行录屏、状态图和验证结果。听到回滚率时可以回头想一想：后来用另一个补丁修掉的问题，未必出现在这个数字里。",
+    "en": "A recurring review comment gives Tan a design question: what still makes this mistake easy to repeat? She uses Dune’s module boundaries and React effects to show how an API or a lint rule can change the next patch. The team then reviews evidence from running software, including recordings and state diagrams. Keep that distinction in mind when she presents the revert rate: a follow-up fix can leave the original change in place.",
+    "chapters": [
+      [
+        324,
+        "哪些 React 副作用留在框架内部",
+        "Which React effects belong inside the framework?"
+      ],
+      [
+        580,
+        "用实际运行的应用留下验证证据",
+        "Collecting evidence from a running application"
+      ],
+      [
+        656,
+        "用状态模型检查跨设备通知",
+        "Model checking cross-device notifications"
+      ],
+      [
+        812,
+        "阅读 PR 数与回滚率",
+        "Reading PR counts and the revert rate"
+      ]
+    ],
+    "source": "https://ai.engineer/talks/O_zcc6Xl12g-all-code-is-slop-except-mine",
+    "evidence": "AI Engineer’s event transcript and slide times; same-ID YouTube chapters for 9:40 and 13:32.",
+    "duration": 1051,
+    "titleZh": "代码都是糟粕（我的除外）",
+    "youtubePublishedAt": "2026-11-14T10:30:09-08:00"
+  },
+  {
+    "id": "Cmoh-yR-usA",
+    "event": "2026 · Maven",
+    "title": "How Cursor Turned AI Agents Into Better Engineers",
+    "zh": "在 Colin Matthews 主持的这堂课里，Lauren 解释为什么一个能点按钮的 Agent 还需要一张功能地图：它得知道用户从哪里进入、会看见什么。最有意思的是 Benny 收到的一份缺陷报告。它能重现旧问题，同时查到主分支已经修复。一次成功的调查因此可以停在证据上，也可以省掉一个多余的补丁。YouTube 链接为该课的公开回放转载。",
+    "en": "In this lesson hosted by Colin Matthews, Tan gives her agent a feature map to go with its ability to click through an application. That map records how a user reaches a feature and what they should see. Watch what happens when Benny gets a bug report: it reproduces the old problem, then establishes that the main branch already contains the fix. The useful output is evidence, and an unnecessary patch disappears from the queue. The YouTube link is a public repost of the lesson.",
+    "chapters": [
+      [
+        739,
+        "把产品入口写进功能地图",
+        "Documenting user paths in a feature map"
+      ],
+      [
+        1207,
+        "为 Agent 的技能做可重复评估",
+        "Repeatable evaluations for agent skills"
+      ],
+      [
+        1673,
+        "Benny 复现了一个已经修好的问题",
+        "Benny reproduces an already-fixed bug"
+      ]
+    ],
+    "source": "https://maven.com/p/e23d9c/how-cursor-turned-ai-agents-into-better-engineers",
+    "evidence": "Host listing identifies Lauren and Colin; checked the exact linked repost’s time-aligned spoken transcript at https://youtube-distilled.com/watch/Cmoh-yR-usA (12:19, 20:07, 27:53).",
+    "duration": 3581,
+    "titleZh": "Cursor 怎样让 AI Agent 成为更好的工程师",
+    "reupload": true,
+    "timingSource": "https://youtube-distilled.com/watch/Cmoh-yR-usA",
+    "youtubePublishedAt": "2026-08-25T16:46:25-07:00"
+  },
+  {
+    "id": "doLKqG8TefU",
+    "event": "2026 · Matt Palmer · Live Q&A",
+    "title": "Grok Bot Q&A with Lauren Tan",
+    "zh": "面对「究竟该建几个 Bot」的问题，Lauren 和 Matt 先谈技能与长期记忆，再谈怎样拆分工作。把 17:49 的讨论和后面的咖啡店例子连起来看，会发现两种完全不同的需求：一个任务需要记住上次做到哪里，另一类任务需要持续接收新事件。两者会怎样影响你给 Bot 的职责？",
+    "en": "A viewer’s question about how many bots to create follows a discussion of skills and long-term memory. Listen to those answers together, then skip to the coffee-shop example. Remembering an unfinished task and responding to a new event are different jobs. The examples give a small team a practical way to decide whether to add a bot, teach an existing one a skill, or change what starts its work.",
+    "chapters": [
+      [
+        1069,
+        "技能与长期记忆",
+        "Skills and long-term memory"
+      ],
+      [
+        1178,
+        "给团队分配几个 Bot",
+        "How many bots to assign"
+      ],
+      [
+        2316,
+        "咖啡店里的自动化",
+        "A coffee shop as a test case"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=doLKqG8TefU",
+    "duration": 5192,
+    "titleZh": "Grok Bot 现场问答",
+    "youtubePublishedAt": "2026-11-20T10:32:35-08:00"
+  },
+  {
+    "id": "y1-9yeYLJUo",
+    "event": "2026 · Y Combinator · Lightcone",
+    "title": "The Rise Of AI Coworkers",
+    "zh": "Lauren 和 Roman Ugarte 描述团队如何把 Bot 放进真实岗位。听到「给 Bot 自己的身份」时，可以先记下它能看见什么、能替谁行动，再跳到后面的自检讨论。一次代码修改既要能运行，也要有人判断它值不值得上线。这让权限设计和产品判断落到了同一个具体问题上。",
+    "en": "Lauren and Roman Ugarte trace what changes when a bot has its own identity and a job inside a company. Follow the discussion of permissions through to the section on checking work. A system can establish that a proposed change runs, yet a person still has to decide whether customers should get it. The two chapters illuminate different responsibilities inside the same release decision.",
+    "chapters": [
+      [
+        886,
+        "身份和权限",
+        "Identity and permissions"
+      ],
+      [
+        2413,
+        "教 Agent 检查自己的工作",
+        "Teaching agents to check their work"
+      ],
+      [
+        3140,
+        "轮到产品判断成为瓶颈",
+        "When product judgment limits throughput"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=y1-9yeYLJUo",
+    "duration": 3606,
+    "titleZh": "当 AI 成为同事",
+    "youtubePublishedAt": "2026-11-14T15:21:16-08:00"
+  },
+  {
+    "id": "xZ5TEaleUdg",
+    "event": "2026 · Peter Yang · Behind the Craft",
+    "title": "We Built Grok Bot. Here Are Our 14 Best Bots | Peng Zheng & Lauren Tan",
+    "zh": "设计师 Peng Zheng 和工程师 Lauren 用自己的 Bot 做演示。看 Lauren 的部分，可以顺着一项改动问下去：合并前，谁检查用户会看到的结果？制作下一个 Bot 时，谁来审查它的设计？把 Dr. Eggbot 和后面的工程 Bot 对照起来，会发现一个负责设计角色，一个负责把具体改动做完。",
+    "en": "Designer Peng Zheng and engineer Lauren Tan show Peter Yang the bots they work with. Follow one engineering change through Tan’s examples: who can test what the user will see before the merge? Then compare that job with Dr. Eggbot, which helps design and audit other bots. The distinction matters when deciding whether a team needs another worker or a better way of defining a worker’s job.",
+    "chapters": [
+      [
+        856,
+        "合并前怎么自测",
+        "Testing before a merge"
+      ],
+      [
+        1079,
+        "Dr. Eggbot 怎样设计其他 Bot",
+        "Dr. Eggbot designs other bots"
+      ],
+      [
+        1522,
+        "工程 Bot 怎样交付 PR",
+        "Engineering bots and pull requests"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=xZ5TEaleUdg",
+    "duration": 2704,
+    "titleZh": "我们设计的 14 个 Grok Bot",
+    "youtubePublishedAt": "2026-09-27T06:00:11-07:00"
+  },
+  {
+    "id": "MN9dGgmLyso",
+    "event": "2026 · Matt Pocock · Live Q&A",
+    "title": "LIVE: Poteto (creator of pstack) on shipping 1,000's of PR's a month at SpaceX",
+    "zh": "Matt 和 Lauren 谈到一种很容易混入代码库的测试：断言只是复述实现，逻辑写错也能通过。后半场再听他们讨论抽查以及可逆、难逆的改动，就能理解为什么同一个团队可以用不同的审查强度。关键在于先认清测试能发现什么，以及改错一次后能不能撤回。",
+    "en": "Matt Pocock and Tan discuss tests that merely echo an implementation. Such a test can stay green while the underlying behavior is wrong. Later, the conversation turns to sampling changes and to decisions that are difficult to undo. Read together, these passages explain how review effort can vary within one team: it depends on what a check can actually detect, and on what recovery would cost.",
+    "chapters": [
+      [
+        574,
+        "只会重复实现的测试",
+        "Tests that echo the implementation"
+      ],
+      [
+        2988,
+        "用抽样理解改动质量",
+        "Sampling changes to understand quality"
+      ],
+      [
+        3383,
+        "哪些决定很难撤回",
+        "Decisions that are hard to undo"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=MN9dGgmLyso",
+    "timingSource": "https://youtube-distilled.com/watch/MN9dGgmLyso",
+    "duration": 3936,
+    "titleZh": "每月数千个 PR 是怎样交付的",
+    "youtubePublishedAt": "2026-10-02T22:08:12-07:00"
+  },
+  {
+    "id": "GgYWPI0Ou-A",
+    "event": "2026 · Cursor Compile London",
+    "title": "2,000 PRs in a Month: How Lauren Tan Uses AI Agents",
+    "zh": "这场为伦敦 Cursor Compile 准备的演讲后来由 Lauren 自己录制并发在 X。她把验证分成两件具体的事：功能地图告诉 Agent 去哪里，命令行工具让它真的走到那里。再看后面的目录结构图，核对哪些边界由代码强制执行。原帖所说的月度 PR 数与演讲画面中的数字不同，理解这套方法无需把它们合并为一个指标。",
+    "en": "Tan recorded this talk prepared for Cursor Compile London and released it on X. Watch the feature map and command-line interface slide together: one gives the agent directions, the other lets it operate the product. Later, the directory diagram shows which process boundaries the framework can enforce. The title of the X post and the number used in the presentation differ. The engineering argument is easier to follow through the diagrams than through the headline count.",
+    "chapters": [
+      [
+        610,
+        "功能地图与命令行验证工具",
+        "The feature map and the verification CLI"
+      ],
+      [
+        1070,
+        "反复纠正 Agent 后改哪里",
+        "Where recurring corrections belong"
+      ],
+      [
+        1680,
+        "目录树中的进程边界",
+        "Process boundaries in the directory tree"
+      ]
+    ],
+    "source": "https://x.com/poteto/status/2102050467505430555",
+    "reupload": true,
+    "duration": 2282,
+    "titleZh": "一个月 2,000 个 PR：Lauren 怎样使用 AI Agent",
+    "youtubePublishedAt": "2026-10-12T17:47:45-07:00"
+  },
+  {
+    "id": "A63sedG-p5Q",
+    "event": "2026 · MTS · Lauren Tan & Roshan Sadanani",
+    "title": "Are Agents About to Replace Software Engineering? | Lauren Tan and Roshan Sadanani",
+    "zh": "跟着屏幕上的任务走，比只听对模型的评价更容易理解这场发布后的演示。协调 Bot 先去问其他 Bot 做过什么；后面，Lauren 又按产品功能把缺陷分派出去。厨房的比喻由此变得具体：一道菜的不同工序可以分头做，但最后要有人知道什么样的结果可以端出去。",
+    "en": "The most revealing part of this conversation with Roshan Sadanani is the handoff on screen. A coordinating bot asks another bot about previous work. Later, Tan dispatches bug reports to agents assigned to particular features. Her kitchen analogy then has a precise meaning: the stations can work independently, while someone still owns the decision that the plate is good enough to serve.",
+    "chapters": [
+      [
+        230,
+        "协调 Bot 向其他 Bot 收集进度",
+        "A coordinator checks on other bots"
+      ],
+      [
+        844,
+        "按产品功能分派缺陷",
+        "Routing bugs to feature owners"
+      ],
+      [
+        1247,
+        "厨房里的质量判断",
+        "Quality control in the kitchen"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=A63sedG-p5Q",
+    "timingSource": "https://www.usetranscribe.io/yt/A63sedG-p5Q/agents-replace",
+    "duration": 1721,
+    "titleZh": "Agent 会接手软件工程吗？",
+    "youtubePublishedAt": "2026-08-13T15:00:25-07:00"
+  },
+  {
+    "id": "Rqrn7yvYWvA",
+    "event": "2026 · Grok Bot Galaxy",
+    "title": "Company build, day 1: Could a team of bots run a pop-up?",
+    "titleZh": "公司共创第一天：一队机器人能筹办快闪餐厅吗？",
+    "zh": "Lauren、Matt Palmer 和 Roshan Sadanani 给自己三天时间，从零做起一家公司。第一天最值得看的是他们怎样把“开一家快闪餐厅”拆成两类工作。机器人可以调研、整理需求、搭建报名页，场地、餐饮许可和愿不愿意赴约的客人却各有自己的时间表。跟着桌上的讨论再看第一个页面，会发现做出原型与让活动开张之间还有多远。",
+    "en": "Lauren, Matt Palmer and Roshan Sadanani give themselves three days to start a company. Their first idea is a restaurant pop-up. Follow the work from the studio table to the first landing page. Bots can research venues, collect names and build a prototype while the hosts are still talking. A venue owner, a permit and a roomful of paying guests each have their own timetable. Those dependencies become more important to the experiment than the speed at which the team can ship a page.",
+    "chapters": [
+      [
+        550,
+        "三位主持人讨论从零做起的公司实验",
+        "The three hosts discuss the company-building experiment"
+      ],
+      [
+        3350,
+        "Lauren 与 Roshan 在直播中查看机器人的工作界面",
+        "Lauren and Roshan review the bot workspace on stream"
+      ],
+      [
+        4000,
+        "共创团队展示快闪餐饮项目的第一版页面",
+        "The studio team shows the pop-up project’s landing page"
+      ]
+    ],
+    "source": "https://x.com/i/broadcasts/1AxRnZbVpjaxl",
+    "reupload": true,
+    "evidence": "Official event and full broadcasts: https://x.ai/galaxy ; studio hosts identified by the organizer: https://x.com/bot/status/2099890276315848743 . Timestamps refer only to the actual studio footage in Chansoo Byeon’s four-hour edit, checked against the visible YouTube storyboard frames at each time. The event and edit include other speakers. No guest workshop is credited to Lauren. Full-day transcript for content cross-check: https://github.com/bgagandeep/grok-bot-galaxy-day1-transcript/blob/master/transcript_named.txt",
+    "timestampMethod": "Visual landmarks in the four-hour YouTube edit. The official X broadcast uses a different timeline.",
+    "edition": "abridged",
+    "duration": 14400,
+    "youtubePublishedAt": "2026-09-22T12:32:11-07:00"
+  },
+  {
+    "id": "KKyuVjP6Sz4",
+    "event": "2026 · Grok Bot Galaxy",
+    "title": "Company build, day 2: Turning bot templates into a game",
+    "titleZh": "公司共创第二天：把机器人模板做成对战游戏",
+    "zh": "快闪餐厅的许可难以在剩下的两天内解决，三人把项目改成观众当天就能试玩的游戏。白板上，一份机器人模板先变成带属性的角色，再进入组队和对战流程。留意 Lauren 如何把一个规则问题变得具体：如果玩家可以付钱买优势，对手为什么还愿意玩？游戏的商业设计、属性计算与第一版实现就这样联系起来。",
+    "en": "With two days left, the hosts trade the restaurant pop-up for a game that viewers will be able to try themselves. Watch the whiteboard turn a bot template into a character with attributes, a team and eventually an opponent. Lauren asks what happens if spending money buys a competitive advantage. That question gives the team a design constraint for both the game and the business. The live specification shows what the engineers can already implement and which rules the team still has to decide.",
+    "chapters": [
+      [
+        230,
+        "Lauren 和 Roshan 用白板拆解模板、属性与对战",
+        "Lauren and Roshan map templates, attributes and battles on a whiteboard"
+      ],
+      [
+        410,
+        "Lauren 展示写进工程文档的游戏规格",
+        "Lauren shows the game specification as a change to the project files"
+      ]
+    ],
+    "source": "https://x.com/i/broadcasts/1PKqrNyvmYwGb",
+    "reupload": true,
+    "evidence": "Official event and full broadcasts: https://x.ai/galaxy ; studio hosts identified by the organizer: https://x.com/bot/status/2099890276315848743 . Timestamps refer only to the actual studio footage in Chansoo Byeon’s four-hour edit, checked against the visible YouTube storyboard frames at each time. The event and edit include other speakers. No guest workshop is credited to Lauren. Full-day transcript for content cross-check: https://github.com/bgagandeep/grok-bot-galaxy-day1-transcript/blob/master/day2/transcript_named.txt",
+    "timestampMethod": "Visual landmarks in the four-hour YouTube edit. The official X broadcast uses a different timeline.",
+    "edition": "abridged",
+    "duration": 14400,
+    "youtubePublishedAt": "2026-09-22T12:50:05-07:00"
+  },
+  {
+    "id": "SijEHnOa2tk",
+    "event": "2026 · Grok Bot Galaxy",
+    "title": "Company build, day 3: Launching Thursday Arena",
+    "titleZh": "公司共创第三天：上线 Thursday Arena",
+    "zh": "第三天，代号 Cupcake 的原型有了名字 Thursday Arena。Lauren 和两位搭档把游戏交给直播观众，开始面对真实的登录、对战和排行榜。看演示时可以追问：网页打开了多少次，又有多少人真正完成一局？玩家反馈、排行榜和使用数据分别回答不同的问题，也让团队看见上线后最值得修的地方。",
+    "en": "The prototype known as Cupcake gets a public name, Thursday Arena. Lauren and her co-hosts put it in viewers’ hands, where signing in, completing a battle and appearing on the leaderboard are separate tests of the product. Follow the group from the launch screen to the leaderboard. A visitor count can show that people opened the site. Seeing players complete matches and climb the ranks gives the builders a different kind of evidence about what actually works.",
+    "chapters": [
+      [
+        390,
+        "Lauren 和两位搭档讨论上线日的实作",
+        "Lauren and her co-hosts discuss the launch-day build"
+      ],
+      [
+        4800,
+        "团队打开 Thursday Arena 的公开入口",
+        "The builders open the public Thursday Arena landing page"
+      ],
+      [
+        9450,
+        "直播查看玩家的全球排行榜",
+        "The studio checks the players’ global leaderboard"
+      ]
+    ],
+    "source": "https://x.com/i/broadcasts/1YGNrbXEeazGw",
+    "reupload": true,
+    "evidence": "Official event and full broadcasts: https://x.ai/galaxy ; studio hosts identified by the organizer: https://x.com/bot/status/2099890276315848743 . Timestamps refer only to the actual studio footage in Chansoo Byeon’s four-hour edit, checked against the visible YouTube storyboard frames at each time. The event and edit include other speakers. No guest workshop is credited to Lauren. Full-day transcript for content cross-check: https://github.com/bgagandeep/grok-bot-galaxy-day1-transcript/blob/master/day3/transcript_named.txt",
+    "timestampMethod": "Visual landmarks in the four-hour YouTube edit. The official X broadcast uses a different timeline.",
+    "edition": "abridged",
+    "duration": 14400,
+    "youtubePublishedAt": "2026-09-22T12:52:55-07:00"
+  },
+  {
+    "id": "bf3rxc26cC4",
+    "event": "2025 · React Conf",
+    "title": "React Conf 2025 Keynote",
+    "zh": "这场多人主旨演讲里，Jack Pope 把舞台交给 Lauren，由她发布 React Compiler 1.0。留意她举的姓名字段：本可在渲染时算出的值，如果经由 Effect 再写回状态，就多走了一轮渲染。她把编译器、能独立启用的 lint 规则和既有应用的渐进迁移串成一条采用路径，团队可以先找出问题，再决定哪部分上线优化。",
+    "en": "Jack Pope hands this portion of the keynote to Tan for the React Compiler 1.0 release. Her example uses a full name that can be calculated during rendering. Putting it into state through an effect pays for another render, and the new linter can flag that cost. Tan separates adopting the diagnostics from rolling out the optimizer. An existing application can learn from the warnings while its team decides where to enable compilation first.",
+    "chapters": [
+      [
+        2041,
+        "Lauren 发布 React Compiler 1.0",
+        "Tan announces the stable compiler"
+      ],
+      [
+        2151,
+        "独立启用编译器驱动的 lint 规则",
+        "Using compiler-powered lint rules independently"
+      ],
+      [
+        2521,
+        "姓名字段与一次额外渲染",
+        "A full-name field and one extra render"
+      ],
+      [
+        2763,
+        "已有应用的渐进迁移",
+        "Incremental adoption for an existing app"
+      ]
+    ],
+    "source": "https://react.dev/blog/2025/10/16/react-conf-2025-recap",
+    "evidence": "Official React keynote recap plus the linked recording’s spoken transcript at https://youtube-distilled.com/watch/bf3rxc26cC4; Tan takes the stage after the 33:43 handoff.",
+    "duration": 3330,
+    "titleZh": "React Conf 2025 主题演讲",
+    "timingSource": "https://youtube-distilled.com/watch/bf3rxc26cC4",
+    "youtubePublishedAt": "2026-01-07T09:34:44-08:00"
+  },
+  {
+    "id": "91TaHm5m7ko",
+    "event": "2025 · React Conf",
+    "title": "React Team Q&A",
+    "zh": "Shruti Kapoor 主持这场 React 团队答问，Lauren 与同事共同出席。可以把编译器相关的两个问题接着听：它从源代码里能知道什么？升级以后，过去手写的 useMemo 和 useCallback 又该怎么办？前者关乎优化成立的条件，后者关乎怎样把条件落实到一个已经运行多年的应用。其余环节还谈到 Activity 与性能工具。",
+    "en": "Shruti Kapoor hosts a panel with Tan and members of the React team. Two audience questions work especially well together: what can the compiler infer from source code, and what should a team do with existing useMemo and useCallback calls? The first asks when an optimization is justified. The second puts that question into a codebase already in production. Other parts of the panel cover Activity, performance tooling and the React Foundation.",
+    "chapters": [
+      [
+        776,
+        "团队答问：编译器能推断什么",
+        "Panel discussion of compiler insights"
+      ],
+      [
+        1580,
+        "团队答问：已有的手动记忆化",
+        "Panel question about existing useMemo and useCallback calls"
+      ]
+    ],
+    "source": "https://conf.react.dev/speaker/fd4c6b7c-8de2-4bf4-9d16-dae5be7093d1",
+    "evidence": "Host schedule confirms her panel participation. Confpad’s chapters match video 91TaHm5m7ko at https://confpad.io/conferences/react-conf-2025/team-qanda. Chapter labels identify panel topics, not an individual speaker.",
+    "duration": 2726,
+    "titleZh": "React 团队现场问答",
+    "timingSource": "https://confpad.io/conferences/react-conf-2025/team-qanda",
+    "youtubePublishedAt": "2026-01-07T09:34:40-08:00"
+  },
+  {
+    "id": "lvhPq5chokM",
+    "event": "2024 · React Conf",
+    "title": "Forget About Memo",
+    "zh": "Lauren 把当时仍在实验阶段的 React Compiler 接进 Bluesky 客户端。她既展示怎样打开优化，也展示怎样知道优化真的生效。增加一个交互之后，沿着组件重新渲染的路径观察，哪些计算被复用、哪些代码让编译器无法安全处理，就成了可以检查的问题。把它与次年的 1.0 发布对照看，可以看到演示里的采用障碍后来如何体现在工具里。",
+    "en": "Tan adds the experimental React Compiler to the Bluesky client and follows an interaction through the component tree. Enabling the plugin is only the first step. The revealing part is how she checks what it optimized, adds a feature, and investigates an unexpected render. The demo makes the optimizer’s assumptions visible in a running application. Watching it beside her 2025 release announcement also explains why diagnostics and gradual adoption became such prominent parts of the rollout.",
+    "chapters": [
+      [
+        146,
+        "为示例应用配置编译器",
+        "Setting up the compiler"
+      ],
+      [
+        369,
+        "检查优化确实生效",
+        "Checking what the compiler optimized"
+      ],
+      [
+        1071,
+        "修复并验证重新渲染问题",
+        "Fixing and verifying render behavior"
+      ],
+      [
+        1554,
+        "团队如何采用编译器",
+        "Adoption in an existing application"
+      ]
+    ],
+    "source": "https://conf2024.react.dev/talks/5",
+    "evidence": "Original React Conf single-session upload lvhPq5chokM, YouTube chapters at 2:26, 6:09, 17:51 and 25:54. Other edits use different offsets.",
+    "duration": 2001,
+    "titleZh": "忘掉手写 memo 吧",
+    "youtubePublishedAt": "2024-07-25T08:57:33-07:00"
+  },
+  {
+    "id": "lyEKhv8-3n0",
+    "event": "2024 · React Conf",
+    "title": "React Conf Keynote (Day 1)",
+    "zh": "Lauren 在这场多人主旨演讲里负责回顾 React 社区。她先给出 npm 下载规模，再用开发者调查切换视角：有多少人在学编程时用到了 React？紧接着，数字换成贡献者的面孔和社区活动的画面。三个镜头合在一起才能读懂这段演讲。下载量描述软件传播的一面，教程、聚会和人们动手做出的库则解释它如何被传下去。",
+    "en": "Tan delivers the State of React segment in a shared keynote. A download chart gives a sense of the software’s reach, then a survey looks at people who are still learning to code. Watch the transition that follows: numbers give way to contributors’ faces and pictures of community events. Each image answers a different question about adoption. Distribution is measurable, while the work of teaching people and maintaining libraries is easier to see in the community itself.",
+    "chapters": [
+      [
+        290,
+        "Lauren 开始回顾 React 社区",
+        "Tan opens the State of React"
+      ],
+      [
+        340,
+        "2023 年的 npm 下载量",
+        "React downloads in 2023"
+      ],
+      [
+        400,
+        "学习编程的人如何用 React",
+        "React among people learning to code"
+      ],
+      [
+        470,
+        "社区贡献者和活动",
+        "Community contributors and events"
+      ]
+    ],
+    "source": "https://react.dev/blog/2024/05/22/react-conf-2024-recap",
+    "evidence": "Organizer recap identifies her State of React role. Confirmed Lauren’s lower third and slides in YouTube storyboards for the exact clip at 4:50, 5:40, 6:40 and 7:50.",
+    "duration": 3671,
+    "titleZh": "React Conf 2024 首日主题演讲",
+    "youtubePublishedAt": "2024-07-25T08:57:33-07:00"
+  },
+  {
+    "id": "iCkPaE4nxaw",
+    "event": "2024 · React Conf",
+    "title": "React Team Q&A",
+    "zh": "Lauren 与 React 团队一起回答听众提问。刚看完《Forget About Memo》的人，可以从编译器与性能控制两个章节进入。演示只需要一个示例能够工作，现场的问题却来自许多不同项目：当框架承担更多优化，开发者还需要理解哪些行为、保留哪些控制？把这些疑问带回自己的性能分析工具，会比照搬示例里的写法更有收获。",
+    "en": "Tan joins the React team for a discussion driven by audience questions. After her compiler demo, listen to the sections on future compiler behavior, control over performance, and integration. A demo can follow one application along a clean path. People in the room are deciding what happens to their own projects when more optimization moves into the framework. The questions are useful companions to the demo because they identify what developers still need to inspect for themselves.",
+    "chapters": [
+      [
+        128,
+        "团队答问：编译器概览",
+        "Panel question on the compiler"
+      ],
+      [
+        715,
+        "性能控制与开发体验",
+        "Performance control and developer experience"
+      ],
+      [
+        922,
+        "如何集成编译器",
+        "Compiler integrations"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=iCkPaE4nxaw",
+    "evidence": "React Conf’s official video description lists Tan on the panel. Time points taken from this exact recording’s YouTube chapters; labels refer to shared discussion.",
+    "duration": 3124,
+    "titleZh": "React 团队现场问答",
+    "youtubePublishedAt": "2024-07-25T08:57:33-07:00"
+  },
+  {
+    "id": "FZ0cG47msEk",
+    "event": "2021 · React Conf",
+    "title": "React 18 Keynote",
+    "zh": "这是一场四人主题演讲。Lauren 的段落谈现有应用怎样升级到 React 18：应用可以先升级，再逐项使用并发特性。注意她从原先的「模式」切换到单个「特性」的用词。对维护大型应用的团队，两种说法意味着截然不同的采用成本。工作组的作用，正是让框架团队在发布前听到这些真实的迁移难题。",
+    "en": "Four React team members share this keynote. Tan’s segment asks what upgrading would look like for an application already in production. Watch the terminology shift from a concurrent mode to individually adoptable features. A team can upgrade the foundation, then decide which interactions warrant new behavior. The working group matters in that account because people maintaining libraries and applications can surface the costs of migration while the release is still taking shape.",
+    "chapters": [
+      [
+        1066,
+        "Lauren 的 React 18 概览",
+        "Tan’s React 18 overview"
+      ],
+      [
+        1180,
+        "并发渲染的含义",
+        "What concurrent rendering means"
+      ],
+      [
+        1304,
+        "React 18 工作组",
+        "The React 18 Working Group"
+      ]
+    ],
+    "source": "https://react.dev/blog/2021/12/17/react-conf-2021-recap",
+    "evidence": "YouTube watch-page chapter data and the time-indexed storyboard for this recording. https://www.youtube.com/watch?v=FZ0cG47msEk",
+    "duration": 2028,
+    "titleZh": "React 18 主题演讲",
+    "youtubePublishedAt": "2021-12-09T03:30:05-08:00"
+  },
+  {
+    "id": "jK0Vg8XbIXk",
+    "event": "2021 · React Labs",
+    "title": "React Server Components: Architecture Q&A",
+    "zh": "Lauren 参与这场架构问答，两位来自 FindMyPast 和 Pinterest 的开发者向 React 团队提问。可以把同一份数据作为线索：先看谁负责请求它，再看结果是否可缓存，出错和翻页后又该交给谁。最后关于采用路径的讨论，为需要逐步迁移既有应用的读者补上了项目约束。",
+    "en": "Developers from FindMyPast and Pinterest bring their questions to a React team panel that includes Tan. Follow one piece of application data through the conversation: who fetches it, what can be cached, and how pagination or a failed request changes the picture. The final discussion of adoption places those design questions back inside an existing application. These are questions from the research phase of Server Components, making the recording particularly revealing about the uncertainty teams faced then.",
+    "chapters": [
+      [
+        511,
+        "数据请求与架构边界",
+        "Data fetching and architecture"
+      ],
+      [
+        2037,
+        "缓存策略",
+        "Choosing a caching strategy"
+      ],
+      [
+        2616,
+        "分页与信息流",
+        "Pagination and feeds"
+      ],
+      [
+        3935,
+        "现有应用的采用路径",
+        "Adoption and migration"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=jK0Vg8XbIXk",
+    "evidence": "YouTube’s recording-specific AUTO_CHAPTERS list (data fetching 511, caching 2037, pagination 2616, adoption 3935 seconds). https://www.youtube.com/watch?v=jK0Vg8XbIXk",
+    "duration": 4589,
+    "titleZh": "React 服务端组件架构问答",
+    "youtubePublishedAt": "2021-04-01T13:44:06-07:00"
+  },
+  {
+    "id": "TQQPAU21ZUw",
+    "event": "2020 · React Core & React Data",
+    "title": "Data Fetching with React Server Components",
+    "zh": "Dan Abramov 先提出一组相互牵制的目标：组件要靠近自己的数据、浏览器少下载代码、界面仍然灵敏。Lauren 接着在笔记应用里把边界画出来。可以对照源码、运行中的笔记和浏览器开发工具，追问一次切换笔记时哪些工作留在服务器，哪些交互仍由客户端接手。",
+    "en": "Dan Abramov sets up a design problem: bring data requirements close to the component that uses them while keeping downloads small and interactions responsive. Tan takes over for the notes-app demonstration. Follow a single selection between the editor, the running application and the browser tools. That gives a concrete way to ask where data is read, what is sent across the network, and which part of the interface still needs client-side state.",
+    "chapters": [
+      [
+        722,
+        "Lauren 演示笔记应用",
+        "Tan demonstrates the notes application"
+      ],
+      [
+        1570,
+        "在浏览器检查一条笔记",
+        "Inspecting a note in the browser"
+      ],
+      [
+        2188,
+        "回顾服务器组件的收益",
+        "Revisiting the benefits of Server Components"
+      ]
+    ],
+    "source": "https://react.dev/blog/2020/12/21/data-fetching-with-react-server-components",
+    "evidence": "YouTube watch-page chapter data and the time-indexed storyboard for this recording. https://www.youtube.com/watch?v=TQQPAU21ZUw",
+    "duration": 3440,
+    "titleZh": "用 React 服务端组件获取数据",
+    "youtubePublishedAt": "2020-12-21T09:12:08-08:00"
+  },
+  {
+    "id": "ZWhrlOWjbqU",
+    "event": "2020 · js.la",
+    "title": "Just Use Any · js.la Edition",
+    "zh": "Lauren 从 Netflix 制片工具团队的选型谈起。她先把效率、错误成本和采用风险摆到桌面，再用一个解释器说明类型怎样影响日常调试。特别值得看的是 token 的种类与类型收窄：程序一旦知道手上是哪种 token，就能缩小接下来必须处理的情况。这为「少花时间调试」提供了可以检查的机制。",
+    "en": "Tan begins with the Netflix studio team’s reasons for considering typed JavaScript and the risks of adopting it. The interpreter example makes the case tangible. A token can take several forms, yet after the code identifies its kind only some operations make sense. Watch the type-narrowing example alongside the earlier question about how many values a type admits. The connection explains where time saved during debugging could actually come from.",
+    "chapters": [
+      [
+        117,
+        "Netflix 怎样论证引入类型",
+        "Making the case at Netflix"
+      ],
+      [
+        682,
+        "类型可以表示多少种值",
+        "How many values can a type contain?"
+      ],
+      [
+        1071,
+        "在解释器里收窄类型",
+        "Type narrowing in the interpreter"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "YouTube watch-page chapter data and the time-indexed storyboard for this recording. https://www.youtube.com/watch?v=ZWhrlOWjbqU",
+    "duration": 1362,
+    "titleZh": "用 any 就好？在团队里推广类型系统",
+    "youtubePublishedAt": "2020-02-17T16:56:42-08:00"
+  },
+  {
+    "id": "rZoz7q2Una0",
+    "event": "2020 · Changelog Interviews #386",
+    "title": "Engineer to Manager and Back Again",
+    "zh": "Lauren 回忆，Netflix 的主管邀请她带团队时，她给自己留了一周，向同事、朋友和家人打听管理究竟是什么工作。后来想回到一线写代码，她担心技术会生疏，也担心这样的选择会被看作倒退。听她区分两种成长：学会给团队提意见，和亲手做出一个产品，都能积累能力。选择岗位时，她最后问的是，自己最想把每天花在哪件事上。",
+    "en": "When her director at Netflix offered her a management role, Tan asked for a week to find out what she would be taking on. Returning to engineering brought a different worry. Would her programming skills still be there? Listen for the distinction she draws between choosing the work you want to do each day and chasing a title that signals advancement. Her experiences giving feedback and speaking in public complicate the idea that growth runs along a single track.",
+    "chapters": [
+      [
+        1069,
+        "用一周时间决定是否接下管理岗位",
+        "Taking a week to consider management"
+      ],
+      [
+        1214,
+        "带团队以后，担心自己的编程手感生疏",
+        "Worrying about losing programming skills"
+      ],
+      [
+        2901,
+        "成为高级工程师之后，怎样继续成长",
+        "Finding room to grow beyond senior engineer"
+      ],
+      [
+        3847,
+        "主管反问 Lauren，什么工作最让她开心",
+        "A director’s question about what brings joy"
+      ]
+    ],
+    "source": "https://changelog.com/podcast/386",
+    "evidence": "Changelog’s official 82-minute, 4,920-second YouTube edition https://www.youtube.com/watch?v=rZoz7q2Una0 (uploaded 2024), with original episode from March 2020 and timestamped publisher transcript https://changelog.com/podcast/386#transcript. Markers match publisher transcript at 17:49, 20:14, 48:21, 1:04:07.",
+    "duration": 4920,
+    "titleZh": "从工程师到经理，再回到工程师",
+    "timingSource": "https://changelog.com/podcast/386#transcript",
+    "youtubePublishedAt": "2024-03-04T16:44:51-08:00"
+  },
+  {
+    "id": "p5Hwb1YbNMY",
+    "event": "2019 · TSConf",
+    "title": "Just Use Any: How to Win Colleagues and Influence Your Boss",
+    "zh": "这场演讲开头是一段失败经验：工程师在推销自己喜欢的技术，经理却在等一个值得解决的问题。Lauren 把类型系统带来的收益放回团队的决策里，逐项讨论背景、可选方案、人与人之间的信任。后半场的值集合示例说明把类型写得更精确能排除哪些错误，也给最初的提案补上了证据。",
+    "en": "Tan recalls pitching a technical idea and failing to persuade her manager. She rebuilds the proposal around the problem her colleagues actually face, the options available to them and the effect a change would have on their work. Later diagrams shrink the set of values a type can represent. That gives a skeptical listener something concrete to evaluate: a more precise type can rule out a particular mistake before it reaches a user.",
+    "chapters": [
+      [
+        140,
+        "一次未能说服经理的提案",
+        "A pitch that failed to persuade"
+      ],
+      [
+        740,
+        "提案里的背景、选择与可信度",
+        "Context, choice and credibility in a proposal"
+      ],
+      [
+        1240,
+        "用更精确的类型减少错误",
+        "Using more precise types to reduce bugs"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "Visually checked unique slides in YouTube storyboard frames at 140, 740 and 1240 seconds for this recording. https://www.youtube.com/watch?v=p5Hwb1YbNMY",
+    "duration": 1594,
+    "titleZh": "用 any 就好？如何说服同事和上司",
+    "youtubePublishedAt": "2019-12-19T07:59:46-08:00"
+  },
+  {
+    "id": "cj07Fwzamy0",
+    "event": "2018 · dotJS",
+    "title": "Learning to Love Type Systems",
+    "zh": "巴黎场把抽象术语落在函数的输入和输出上。观察图里的箭头：一个输入有没有对应的输出，和某个操作有没有意外抛错，是两种需要分别检查的性质。随后出现的 Option 和组合示例给缺失的值一个显式位置。它们把「调用方也许得小心」换成了接口能传达的信息。",
+    "en": "The Paris edition uses diagrams mapping input values to outputs. Follow the arrows as Tan introduces total and partial functions. The diagrams invite two practical questions: which inputs does the implementation cover, and how will its caller recognize a missing result? The later example with optional values and composition gives the absence of a result an explicit place in the interface. Revisit the cardinality section to see how a narrower type changes the number of cases left to consider.",
+    "chapters": [
+      [
+        581,
+        "全函数与偏函数",
+        "Total and partial functions"
+      ],
+      [
+        810,
+        "可选值如何参与组合",
+        "Composing with optional values"
+      ],
+      [
+        1017,
+        "类型的基数与精确度",
+        "Cardinality and precision"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "YouTube watch-page chapter data and the time-indexed storyboard for this recording. https://www.youtube.com/watch?v=cj07Fwzamy0",
+    "duration": 1261,
+    "titleZh": "如何爱上类型系统",
+    "youtubePublishedAt": "2018-11-28T01:57:40-08:00"
+  },
+  {
+    "id": "CPECnlUwk-c",
+    "event": "2018 · Reactathon",
+    "title": "Swipe Left, Uncaught TypeError: Learning to Love Type Systems",
+    "zh": "在旧金山场，Lauren 用 makeArray 示范泛型：输入不同，函数依然能把有关元素类型的信息交还给调用方。后面可以接着看类型签名如何提示实现，再走到 GraphQL。贯穿这三段的问题是同一个：程序的一层已经知道的事，有多少能准确传递给下一层？",
+    "en": "In the San Francisco recording, the small makeArray example illustrates a useful property of generics. A caller can keep information about the element it passed in even when the function works for many different types. Follow that example into the discussion of signatures that suggest implementations and then the closing section on GraphQL. Across the three stops, ask how much knowledge can survive the move from one layer of a program to another.",
+    "chapters": [
+      [
+        630,
+        "makeArray 的泛型例子",
+        "The generic makeArray example"
+      ],
+      [
+        960,
+        "从类型签名推敲实现",
+        "Letting the type signature suggest an implementation"
+      ],
+      [
+        1973,
+        "GraphQL 与跨层类型信息",
+        "GraphQL and types across layers"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "YouTube watch-page chapter data and the time-indexed storyboard for this recording. https://www.youtube.com/watch?v=CPECnlUwk-c",
+    "duration": 2145,
+    "titleZh": "划走未捕获的 TypeError：如何爱上类型系统",
+    "youtubePublishedAt": "2018-09-20T07:10:01-07:00"
+  },
+  {
+    "id": "y3uXazpAdwo",
+    "event": "2018 · React Rally",
+    "title": "Swipe Left, Uncaught TypeError: Learning to Love Type Systems",
+    "zh": "盐湖城的版本从容易在运行时才暴露的错误讲到泛型，再把函数画成输入到输出的映射。可以停在全函数和偏函数的对照处，给自己的接口找一个它处理不了的输入。最后的 GraphQL 段把同一个追问移到网络边界，调用方能从返回值的形状里事先知道什么？",
+    "en": "The Salt Lake City recording moves from a JavaScript error through generic functions to diagrams of inputs and outputs. Pause at the comparison of total and partial functions and supply an input your own API struggles to handle. What would its signature have to say for a caller to anticipate the result? The final GraphQL section carries that question across a network boundary, where both sides need to understand the shape of the data.",
+    "chapters": [
+      [
+        461,
+        "泛型如何保留输入信息",
+        "How generics preserve input information"
+      ],
+      [
+        1055,
+        "比较全函数与偏函数",
+        "Comparing total and partial functions"
+      ],
+      [
+        1607,
+        "把类型放到 GraphQL 边界",
+        "Types at the GraphQL boundary"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "YouTube watch-page chapter data and the time-indexed storyboard for this recording. https://www.youtube.com/watch?v=y3uXazpAdwo",
+    "duration": 1782,
+    "titleZh": "划走未捕获的 TypeError：如何爱上类型系统",
+    "youtubePublishedAt": "2018-08-22T11:47:20-07:00"
+  },
+  {
+    "id": "5_Xj7okmauc",
+    "event": "2018 · RubyConf AU",
+    "title": "Building the World’s Largest Studio at Netflix",
+    "zh": "Netflix 开始制作原创内容后，制作团队一度靠文档和电子表格协调项目。Lauren 回顾他们怎样把第一套流程做成 Rails 和 Ember 应用，以及为什么变化很快的制片业务重视代码的可读性。再跳到生产工具那一段，可以看到选语言的另一面：部署、监控和内部联系统都得能接住团队新写的应用。",
+    "en": "As Netflix began producing original content, documents and spreadsheets carried much of the coordination work. Tan describes the first Rails and Ember application that grew out of that process. Her account connects the changing needs of studio staff to readability and the team’s choice of Ruby. The later material on production tooling supplies the other half of the decision: a language can suit the people writing the application and still need deployment and monitoring support inside a larger engineering organization.",
+    "chapters": [
+      [
+        379,
+        "电子表格如何支撑早期制作",
+        "Early production work in spreadsheets"
+      ],
+      [
+        479,
+        "首个 Rails 和 Ember 应用",
+        "The first Rails and Ember application"
+      ],
+      [
+        975,
+        "在生产系统中支持 Ruby",
+        "Supporting Ruby in production"
+      ]
+    ],
+    "source": "https://www.rubyevents.org/talks/building-the-world-s-largest-studio-at-netflix",
+    "evidence": "Timed transcript of this YouTube recording on RubyEvents: 06:19, 07:59, 16:15. https://www.youtube.com/watch?v=5_Xj7okmauc",
+    "duration": 1898,
+    "titleZh": "Netflix 怎样搭建支撑大型影视制作的系统",
+    "youtubePublishedAt": "2018-12-19T21:30:24-08:00"
+  },
+  {
+    "id": "g2ATsmnkjbs",
+    "event": "2017 · Code Europe",
+    "title": "Monoliths to Services with Elixir and Phoenix",
+    "zh": "把一个应用拆成几个服务之后，团队要怎样看见每一部分正在做什么？Lauren 先介绍 Elixir 的管道与宏，再把视野拉到运行中的进程和监控。顺着这个顺序看，才能理解 umbrella 项目的取舍：代码可以按业务边界分别组织，部署和排查问题时，团队仍需要知道它们如何协作。",
+    "en": "How does a team see what its software is doing after splitting it into services? Tan moves from Elixir language features to monitoring the running system, then into the mechanics of umbrella applications. Follow that change of scale. A pipe makes successive transformations legible in one function. The larger challenge is keeping the collaboration between parts legible once several applications share responsibility for a feature.",
+    "chapters": [
+      [
+        1040,
+        "用管道串起数据变换",
+        "The pipe operator"
+      ],
+      [
+        1660,
+        "监控运行中的应用",
+        "Monitoring the running system"
+      ],
+      [
+        2490,
+        "Umbrella 之后的进阶议题",
+        "Beyond the umbrella basics"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "https://www.youtube.com/watch?v=g2ATsmnkjbs",
+    "timestampMethod": "Visual landmarks, checked against YouTube’s timestamped storyboard for this recording.",
+    "duration": 3103,
+    "titleZh": "用 Elixir 和 Phoenix 将单体应用拆成服务",
+    "youtubePublishedAt": "2017-10-23T02:05:04-07:00"
+  },
+  {
+    "id": "ln_DvmQsvis",
+    "event": "2017 · EmberConf",
+    "title": "Confessions of an Ember Addon Author",
+    "zh": "读一个 addon，可以先读它承诺给使用者的那几行 API。Lauren 用文档驱动开发解释为什么这个顺序有用，再展示如何在构建时剔除没用到的 helpers。最后回到兼容性：包在作者机器上可运行，只完成了第一步。真正使用它的人还会带来不同的 Ember 版本和浏览器。",
+    "en": "Start with the few lines a person would need to use an addon. Tan uses documentation-driven development to bring that interface into focus, then shows how a build hook can strip unused helpers from the delivered app. Compatibility changes the standard of proof again. A package that runs on the maintainer’s machine must also survive the Ember versions and browsers its users actually have.",
+    "chapters": [
+      [
+        246,
+        "先写使用文档",
+        "Designing through documentation"
+      ],
+      [
+        814,
+        "从构建中移除未用的 helpers",
+        "Removing unused helpers from the build"
+      ],
+      [
+        1060,
+        "用 Ember Try 检查兼容性",
+        "Checking compatibility with Ember Try"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "https://confpad.io/conferences/emberconf-2017/confessions-of-an-ember-addon-author",
+    "timestampMethod": "Chapter index matched to this recording.",
+    "duration": 1961,
+    "titleZh": "一位 Ember 插件作者的自白",
+    "timingSource": "https://confpad.io/conferences/emberconf-2017/confessions-of-an-ember-addon-author",
+    "youtubePublishedAt": "2017-04-08T13:40:55-07:00"
+  },
+  {
+    "id": "zlZdOwAWcbo",
+    "event": "2017 · Erlang & Elixir Factory SF",
+    "title": "From Front End to Full Stack with Elixir & Phoenix",
+    "zh": "这次旧金山现场，Lauren 用元组和函数规格铺垫后面的请求处理：一个 Plug 接收连接与选项，再返回连接。看懂这个小接口后，渐进接入 Phoenix 就很直观了。新系统可以先处理有把握的一部分请求，把其他路径交给旧服务，工程师也就有机会逐段比对迁移的行为。",
+    "en": "In this San Francisco recording, tuples and function specifications set up a small but consequential interface. A Plug takes a connection and options, then returns a connection. Once that contract is visible, incremental adoption is easier to picture. A Phoenix application can own selected paths while an existing service continues handling the rest. Each change of ownership gives the team a bounded piece of behavior to check.",
+    "chapters": [
+      [
+        850,
+        "元组怎样表示数据",
+        "Representing data with tuples"
+      ],
+      [
+        1190,
+        "用 @spec 描述函数",
+        "Describing a function with @spec"
+      ],
+      [
+        1710,
+        "一个 Plug 的输入与输出",
+        "The input and output of a Plug"
+      ],
+      [
+        1880,
+        "逐步引入 Phoenix",
+        "Introducing Phoenix incrementally"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "https://www.youtube.com/watch?v=zlZdOwAWcbo",
+    "timestampMethod": "Visual landmarks, checked against YouTube’s timestamped storyboard for this recording.",
+    "duration": 2552,
+    "titleZh": "用 Elixir 和 Phoenix 从前端走向全栈",
+    "youtubePublishedAt": "2017-03-23T23:37:00-07:00"
+  },
+  {
+    "id": "r4ulu8wo_GI",
+    "event": "2016 · ElixirConf",
+    "title": "From Front End to Full Stack with Elixir and Phoenix",
+    "zh": "把旧 API 搬到 Phoenix，必须一次写完全部路由吗？Lauren 先把请求拆成一条可组合的处理管道，再演示 Terraform Plug 怎样把尚未迁移的路径送回旧 API。一次只接管一个端点，学习语言和验证行为就可以同时推进。这里的 Terraform 是她介绍的 Plug，与云基础设施工具同名。",
+    "en": "Does moving an API to Phoenix require rewriting every route before shipping any of it? Tan builds up a view of a request as a pipeline, then presents a Plug named Terraform that forwards unhandled routes to the legacy API. That makes it possible to take responsibility for one endpoint at a time and check the behavior as the team learns. Terraform here is the name of the Plug in her example.",
+    "chapters": [
+      [
+        524,
+        "用递归理解 Elixir",
+        "Thinking recursively"
+      ],
+      [
+        1352,
+        "把 Phoenix 请求看成管道",
+        "A Phoenix request as a pipeline"
+      ],
+      [
+        1619,
+        "Terraform 把未迁移的请求转给旧 API",
+        "Terraform forwards unhandled routes"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "https://confpad.io/conferences/elixirconf-2016/from-front-end-to-full-stack-with-elixir-and-phoenix",
+    "timestampMethod": "Chapter index matched to this recording.",
+    "duration": 2061,
+    "titleZh": "用 Elixir 和 Phoenix 从前端走向全栈",
+    "timingSource": "https://confpad.io/conferences/elixirconf-2016/from-front-end-to-full-stack-with-elixir-and-phoenix",
+    "youtubePublishedAt": "2016-09-27T09:56:20-07:00"
+  },
+  {
+    "id": "ZpM4cV7rfj0",
+    "event": "2016 · EmberCamp London",
+    "title": "I Can Write My App with No Handlebars",
+    "zh": "该把排序和筛选写在组件、模板还是 helper 里？Lauren 比较了几种表达同一界面的写法，再展示 repeat 与 toggle 的实现。看这些例子时，可以留意 helper 的名字是否讲清了动作、参数是否暴露了所需的数据。模板有了一组恰当的小词汇，阅读者就能直接辨认界面意图。",
+    "en": "Where should filtering and sorting live when several templates need the same behavior? Tan compares different ways of expressing a list and then builds small helpers, including repeat and toggle. Look at each call from the perspective of the next person reading the template. The name identifies the operation, while its arguments reveal the data involved. The implementation can remain separately testable without obscuring what the screen does.",
+    "chapters": [
+      [
+        550,
+        "用 map 表达列表渲染",
+        "Expressing a list with map"
+      ],
+      [
+        1210,
+        "实现 repeat helper",
+        "Implementing the repeat helper"
+      ],
+      [
+        1320,
+        "从 toggle 看返回函数的 helper",
+        "A helper that returns a toggle function"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "https://www.youtube.com/watch?v=ZpM4cV7rfj0",
+    "timestampMethod": "Visual landmarks, checked against YouTube’s timestamped storyboard for this recording.",
+    "duration": 1635,
+    "titleZh": "不用 Handlebars，也能写 Ember 应用",
+    "youtubePublishedAt": "2016-09-16T11:24:53-07:00"
+  },
+  {
+    "id": "2VQNK_sO9pQ",
+    "event": "2016 · EmberATX",
+    "title": "I Can Write My App With No Handlebars",
+    "zh": "在 Austin 的分享里，Lauren 先让观众看一个按项展开的列表，再展示把排序规则包进 helper 后，模板会长什么样。值得盯住的是这条界线：排序方式可以单独命名和测试，而读模板的人只需看出眼前的列表按什么顺序呈现。后面的 toggle 示例又把同一问题带到交互上。",
+    "en": "In Austin, Tan shows a template iterating over a list and later opens up a sorting helper. Watch what becomes visible at each level: the template expresses which order the list should have, while a small function holds the comparison that implements it. The toggle example then asks a similar question about interaction. How much of a state change can a clear name communicate to the next reader?",
+    "chapters": [
+      [
+        610,
+        "用 each 渲染列表",
+        "Rendering a list with each"
+      ],
+      [
+        1230,
+        "排序规则与 sort helper",
+        "Comparison functions and the sort helper"
+      ],
+      [
+        1700,
+        "把切换状态封装为动作",
+        "Wrapping a state change in a toggle action"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=2VQNK_sO9pQ",
+    "evidence": "https://www.youtube.com/watch?v=2VQNK_sO9pQ",
+    "timestampMethod": "Visual landmarks, checked against YouTube’s timestamped storyboard for this recording.",
+    "duration": 2309,
+    "titleZh": "不用 Handlebars，也能写 Ember 应用",
+    "youtubePublishedAt": "2016-08-25T12:20:29-07:00"
+  },
+  {
+    "id": "lP9ap-AKBAM",
+    "event": "2016 · EmberConf",
+    "title": "Idiomatic Ember: Sweet Spot of Performance and Productivity",
+    "zh": "一个输入框改了值，究竟谁应该更新数据？Lauren 借双向绑定说明，组件间的联动一旦变多，状态归属就会难以追踪。她接着讨论 actions 与 services，并比较计算属性、helper 和组件钩子的职责。观看时可以跟着一次修改往回找：谁有权写入，谁只需要显示结果？",
+    "en": "When someone edits an input, which object should change the data? Tan’s examination of two-way bindings gives that question a concrete shape. Actions and services offer different ways to move a change through an Ember application. Later she compares computed properties, helpers and component hooks. Trace a single edit back to the object that owns the value, then notice how many other components only need to display it.",
+    "chapters": [
+      [
+        482,
+        "双向绑定如何影响状态归属",
+        "Two-way binding and state ownership"
+      ],
+      [
+        807,
+        "新版 actions",
+        "New-style actions"
+      ],
+      [
+        1217,
+        "计算属性、helper 与组件钩子",
+        "Computed properties, helpers and component hooks"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "https://confpad.io/conferences/emberconf-2016/idiomatic-ember-sweet-spot-of-performance-and-productivity",
+    "timestampMethod": "Chapter index matched to this recording.",
+    "duration": 1759,
+    "titleZh": "写出地道的 Ember：兼顾性能与开发效率",
+    "timingSource": "https://confpad.io/conferences/emberconf-2016/idiomatic-ember-sweet-spot-of-performance-and-productivity",
+    "youtubePublishedAt": "2016-04-15T09:59:01-07:00"
+  },
+  {
+    "id": "9fcH61sRb7w",
+    "event": "2015 · Global Ember Meetup",
+    "title": "Component Best Practices",
+    "zh": "这场线上分享把浏览器中的示例与编辑器来回对照。先看页面上嵌套的一组组件，再追进实现，试着找出哪些数据从父层传下来，哪些操作要送回去。这样看「Data Down, Actions Up」就有了具体判断：点一下控件后，哪一层应该决定新值，哪些组件跟着刷新？",
+    "en": "This screen-share moves between the running example and its implementation. Look at the group of components on screen, then follow the discussion into the editor. The framework’s vocabulary becomes easier to use once you can point to a value passed down and an action sent back up. When a control is activated, which component decides what the new value should be, and which components simply render the result?",
+    "chapters": [
+      [
+        210,
+        "在浏览器检查组件示例",
+        "Inspecting the component example in the browser"
+      ],
+      [
+        840,
+        "进入编辑器查看实现",
+        "Following the example into the editor"
+      ],
+      [
+        2730,
+        "回到运行中的界面",
+        "Returning to the running interface"
+      ]
+    ],
+    "source": "https://www.youtube.com/watch?v=9fcH61sRb7w",
+    "evidence": "https://www.youtube.com/watch?v=9fcH61sRb7w",
+    "timestampMethod": "Visual landmarks, checked against YouTube’s timestamped storyboard for this recording.",
+    "duration": 3137,
+    "titleZh": "怎样设计好用的组件",
+    "youtubePublishedAt": "2015-12-05T11:56:09-08:00"
+  },
+  {
+    "id": "TlU0m18Pr-Y",
+    "event": "2015 · EmberConf",
+    "title": "Ambitious UX for Ambitious Apps",
+    "zh": "界面正在加载时，用户怎样知道刚才那一下点击生效了？Lauren 用提示服务和短暂出现的消息演示同一个设计问题。服务保存状态，组件负责呈现，一条消息还能在合适的时间消失。把这些例子放在一起看，会发现一个可以复用的组件，也能让应用在每次等待时都更好理解。",
+    "en": "How does a person know that a click did something while the application is still loading? Tan explores that question through a loading service and a queue of temporary messages. A service can own the state, a component can present it, and a timer can retire a message when its job is done. These small examples connect reusable Ember primitives with a recognizable experience of waiting for an interface to respond.",
+    "chapters": [
+      [
+        346,
+        "从响应式编程谈交互",
+        "Reactive programming and interaction"
+      ],
+      [
+        881,
+        "让系统状态可见",
+        "Making system status visible"
+      ],
+      [
+        912,
+        "用短暂消息给出反馈",
+        "Giving feedback through flash messages"
+      ]
+    ],
+    "source": "https://www.no.lol/speaking/",
+    "evidence": "https://confpad.io/conferences/emberconf-2015/ambitious-ux-for-ambitious-apps",
+    "timestampMethod": "Chapter index matched to this recording.",
+    "duration": 1582,
+    "titleZh": "给有野心的应用设计用户体验",
+    "timingSource": "https://confpad.io/conferences/emberconf-2015/ambitious-ux-for-ambitious-apps",
+    "youtubePublishedAt": "2015-03-09T08:28:10-07:00"
+  }
+]

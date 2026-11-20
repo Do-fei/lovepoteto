@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="alternate" hreflang="en" href="loops-en.html"><link rel="alternate" hreflang="zh-CN" href="loops.html"><link rel="alternate" hreflang="ja" href="loops-ja.html"><title>朝食の卵から考える、開発のボトルネック · LovePoteto</title><link rel="stylesheet" href="style.css?v=cdfe226796"></head>
+<body><header><a class="brand" href="index-ja.html"><b aria-hidden="true">♥</b>Love poteto</a>
+<nav aria-label="サイト内メニュー"><a href="index-ja.html#articles" >記事を読む</a>
+<a href="screenings-ja.html" >講演シアター</a>
+<a href="index-ja.html#life" >経歴</a></nav><div class="lang" aria-label="言語"><a href="loops-en.html" lang="en" hreflang="en" >EN</a><a href="loops.html" lang="zh-CN" hreflang="zh-CN" >中文</a><a href="loops-ja.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></div></header>
+<main><article class="reading">
+<a href="index-ja.html#articles" >記事一覧に戻る</a><p class="meta"><time>2026-06-25</time> · Lauren Tan · X</p>
+<h1>朝食の卵から考える、開発のボトルネック</h1><div lang="en">Loops You Can Trust</div>
+<img class="cover" src="assets/covers/loops.jpg" alt="" loading="eager" decoding="async">
+<h2>読む手がかり</h2><p>卵とトーストとコーヒーを一緒に出したい。トースターがどんなに速くても、卵がゆで上がるまでの三分は縮まらない。アンディ・グローブの朝食のたとえを借りて、ローレンは問いかける。エージェントとソフトウェアを作るとき、後の作業すべてを待たせているのはどの工程だろう。</p>
+<h2>具体例を読み解く</h2><p>Cursor の性能調査は、その答えの一例だ。エージェントが開発版を起動し、利用者の操作を再現してプロファイルを記録し、変更後に同じ測定をもう一度行う。人間のエンジニアが問題を捉えるときと同じ計測手段を渡すことで、その場限りだった調査が繰り返せる手順になる。</p>
+<h2>画面が同じに見えても見落としたこと</h2><p>共有 UI ライブラリを StyleX に移行したとき、サンプルの画面は以前と同じに見えた。それでも社内で使うと、要素の重なり順や、別の場所からのグローバルスタイルへの依存が問題になった。次の移行では末端のコンポーネントを一つずつ扱い、クラスを消す前に利用箇所を調べた。問題の影響が小さくなり、どの判断が原因だったかもたどりやすくなった。</p>
+<aside class="editor"><h2>編集ノート</h2><p>再測定で元の条件を再現できなければ、結果は「判断材料が足りない」と記録する。そこで立ち止まれる手順なら、次の仕事も任せやすい。</p></aside>
+<div class="source"><a href="https://x.com/poteto/status/2069824386283319343" >X で原文を読む</a><a href="https://threadnavigator.com/thread/2069824386283319343/" >英語原文のミラー</a></div>
+<hr><p>次に読む · <a href="cursor-ja.html" >エンジニアのチームを率いて学んだ、エージェントとの働き方</a></p></article></main><footer><p>LovePoteto · poteto が大好きなファンの手による、小さな百科事典。</p>
+<p><a href="https://x.com/poteto" >X · @poteto</a>　 <a href="https://github.com/poteto" >GitHub</a></p></footer></body></html>

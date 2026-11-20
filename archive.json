@@ -1,0 +1,219 @@
+{
+  "articles": [
+    [
+      "automate",
+      "2123159537016533493",
+      "2026-11-19",
+      "Automate Anything with Grok Bot",
+      "从一个值得交出去的任务开始",
+      "Start with a job worth handing over",
+      "https://www.teapawt.org/poteto/article/2123159537016533493",
+      "Lauren 把一个看起来简单的请求拆开：如果请机器人处理预约，究竟怎样才算完成？填过表单、发出邮件、系统里留有正确时间、顾客收到确认，是四个不同的状态。先说清客户最后要得到什么，机器人才能发现现有流程里哪一步可以简化。",
+      "Tan takes apart an apparently simple assignment: handling a booking. Filling in a form, sending an email, saving the right time and getting a confirmation to the customer are four distinct states. Once the customer’s outcome is explicit, the bot can help decide which steps the business actually needs.",
+      "她建议把平时怎么做、信息在哪儿、自己如何检查结果一口气讲给 Bot，再请它用自己的话复述。复述时，人还能用很低的成本发现遗漏。到汽车维修店的例子，等待时间和顾客评价成了判断流程有没有改善的依据。",
+      "Tan suggests talking the bot through one ordinary working day, including where information lives and how a person checks the result. Hearing the assignment back exposes missing context. In her repair-shop example, service timestamps give a waiting customer’s complaint something concrete to investigate.",
+      "下次交接一个任务，可以在纸上写两句：谁会因为它完成而受益？那个人能观察到什么变化？答完再选工具。",
+      "Before choosing a tool, name the person who benefits and the change they will notice. Those two sentences can become a first acceptance check.",
+      [
+        "一次预约要留下两份证据",
+        "What counts as a completed booking?",
+        "原文把预约讲得更细：邮件里的时间可能和预约系统冲突，有些服务需要预留间隔，资料不全的请求还要在补齐之后接着处理。负责人得说清哪个记录可信、什么时候应找人。只有这些判断能落到具体例子上，定时或按邮件触发的自动执行才有意义。",
+        "The booking example includes conflicting times in email and the reservation system, services that need a buffer, and requests that must resume when details arrive. A human can teach those judgments with examples. A schedule or email trigger becomes useful once the bot knows which record to trust and when to ask for help."
+      ]
+    ],
+    [
+      "craft",
+      "2103571281014861957",
+      "2026-09-26",
+      "Coding is dead, long live Coding",
+      "第一次让文字动起来的快乐",
+      "The delight of making text move",
+      "https://www.techtwitter.com/articles/coding-is-dead-long-live-coding-2103571281014861957",
+      "Lauren 从高中发现 HTML 的 marquee 标签写起。屏幕上的字动了起来，这种立刻看见自己改变了什么的快乐，解释了她为什么愿意花时间琢磨每一行代码，也解释了手写过程被替代时真实的失落。",
+      "Tan opens with the HTML marquee tag she found in high school. Making words move offered immediate evidence that she could change something on a screen. That memory explains both the pleasure she took in refining a line of code and the loss she feels as the work changes.",
+      "文章随后把目光放到以前做不出来的东西上。她仍然得先形成一个清晰的设想，再找到足够的上下文把它传递给 Agent。标题里大写的第二个 Coding，可以读作一个开放的问题：当手上的动作发生变化，创作的哪一部分还值得保留？",
+      "She then turns to ideas that used to exceed her reach. Bringing one into the world still requires a clear picture of the result and enough context to communicate it. The change of case in the title invites a reading: which parts of making software would we most like to keep?",
+      "这篇适合与她的验证文章配对阅读。先选一个你真想做出来的小东西，再写下你会如何认出它已经足够好。两篇文章分别照亮了这个练习的两半。",
+      "Read this alongside her verification guide. Pick something you genuinely want to make, then describe how you would recognize a good version. The two essays illuminate different halves of that exercise.",
+      [
+        "为什么她会提到鞋匠",
+        "Why the shoemaker matters",
+        "文中借用鞋匠的比喻，承认一种手艺可以继续存在，却逐渐退出大多数人的日常。Lauren 随后提醒读者，今天的模型、语言和框架都继承了前人的劳动。这个转折让结尾的乐观更有分量：新一代人更容易参与创造，和老程序员怀念手感，两件事可以同时为真。",
+        "The shoemaker analogy allows for a craft to survive even as it becomes rare in daily life. Tan then traces a debt to earlier programmers through the languages, frameworks and models available today. That turn gives the hopeful ending some weight. A newcomer’s delight and an experienced programmer’s grief can coexist."
+      ]
+    ],
+    [
+      "pstack-2",
+      "2097732320606507506",
+      "2026-09-10",
+      "The Complete Guide to pstack Pt. 2",
+      "让 Agent 先把问题讲给你听",
+      "Let the agent explain the problem first",
+      "https://www.teapawt.net/poteto/article/2097732320606507506",
+      "一条 Slack 反馈通常混着现象、猜测和解决建议。Lauren 会把原始讨论交给 Agent，请它先复述问题。她由此能在任何改动发生前看见误解，也给 Agent 留出了挑战自己最初判断的空间。",
+      "A Slack thread tends to mix observations, theories and proposed fixes. Tan asks the agent to restate the issue before changing anything. She can hear where it went astray and leave room for an interpretation that challenges her own.",
+      "她以内部桌面框架 Dune 为例，先写一篇教人怎样用它构建应用的教程。写不清楚的步骤会暴露接口里的含糊。沿着教程倒推设计，双方手上都有一个可以实际走通的使用场景。",
+      "While designing the Dune desktop framework, she started with a tutorial for someone building an app. A step that is hard to explain can reveal an awkward interface. Working backwards from the tutorial gives both parties a concrete scenario to test.",
+      "试着把缺陷报告里的解决方案遮住，只保留用户观察到的事实。让两个同事各自复述一遍，看看他们描述的是否真是同一个问题。",
+      "Hide the proposed fix in a bug report and keep the observations. Ask two people to restate it independently. Their differences can expose an ambiguity before it becomes a patch.",
+      [
+        "怎样知道一个设计值得选",
+        "How a design earns its place",
+        "在下拉菜单的例子里，几个方案可以放进同一个切换器，让人真的操作、对照截图和时序。服务边界的例子则比较调用方要写的代码、类型和接口。两个例子用了不同证据，回答的都是同一件事：哪一种差异会让使用者的处境变好？",
+        "For a dropdown, Tan describes putting alternatives behind a switcher so interaction, layout and timing can be compared. For a service boundary, the useful artifacts are a caller’s code, types and signatures. Each comparison gives the person choosing a design something they can inspect at the point of use."
+      ]
+    ],
+    [
+      "pstack-1",
+      "2094457600259842065",
+      "2026-09-01",
+      "The Complete Guide to pstack Pt. 1",
+      "给 Agent 一条可以亲手走通的路",
+      "Give the agent a path through the app",
+      "https://threadnavigator.com/thread/2094457600259842065/",
+      "Lauren 虚构了一款叫 Atlas 的桌面应用，借它说明验证工具该长什么样。创建会话、发送消息、等待界面稳定、查看可访问性树和截图都是具体动作。它们连在一起，才足以回答用户看到的结果是否正确。",
+      "Tan invents a desktop app called Atlas to show what a verification tool can do. Starting a conversation, sending a message, waiting for the interface to settle and inspecting its accessibility tree form a path to an observable result.",
+      "另一个容易忽略的部分是功能地图。工具能点按钮，地图告诉它用户从哪里找到这个按钮，以及接下来应该看到什么。应用入口改变时，地图也要跟着维护，否则一次成功可能只说明旧路径碰巧还能走。",
+      "A feature map supplies the knowledge that a button-clicking tool lacks: how a user reaches a feature and what they should see there. Our reading is that the map belongs alongside the product because a navigation change can invalidate an otherwise working test.",
+      "可以拿本站检验这个思路：在中文精读页切到英文，原文链接是否仍指向同一篇？这个问题比「语言按钮能点击」更接近读者关心的结果。",
+      "Try it on this archive. Switch to English halfway through an article and check the original source link. Does it still point to the same essay? That checks a reader’s goal as well as a button.",
+      [
+        "截图该回答什么",
+        "What should the screenshot settle?",
+        "Atlas 例子里有一个等待界面稳定的动作。如果消息还在流式生成，同一时刻截两次图就可能出现不同结果。编者理解，验证工具需要描述观察发生的条件。把等待、实际操作和截图组合起来，接手的人才知道自己在重现哪种状态。",
+        "The Atlas example includes a way to wait for the interface to settle. A screenshot captured while a response is streaming can change between runs. Our reading is that a verification tool needs to describe the conditions of observation. The action, the wait and the capture together make the result interpretable."
+      ]
+    ],
+    [
+      "loops",
+      "2069824386283319343",
+      "2026-06-25",
+      "Loops You Can Trust",
+      "一枚早餐鸡蛋与软件交付的瓶颈",
+      "What a breakfast egg teaches about bottlenecks",
+      "https://threadnavigator.com/thread/2069824386283319343/",
+      "早餐店得同时端出鸡蛋、吐司和咖啡。煮蛋需要三分钟，无论吐司机有多快，整份早餐都有一道绕不过去的工序。Lauren 借 Andy Grove 的例子问：在 Agent 写软件的流程里，哪一步让后面所有工作都得等？",
+      "Eggs, toast and coffee have to arrive together. A faster toaster cannot shorten the three minutes an egg takes. Borrowing Andy Grove’s breakfast example, Tan asks which stage sets the pace when agents work on software.",
+      "她在 Cursor 的性能排查里找到了一个答案。Agent 得能启动开发版、重现用户遇到的操作、记录性能，再于改动后重测。让它接触到工程师判断问题时使用的信号，才有条件把人工排查变成可重复的流程。",
+      "Her Cursor performance work gives one answer. The agent needs to launch a development build, reproduce an interaction, record a profile and repeat the measurement after the change. Sharing the engineer’s instruments makes the investigation repeatable.",
+      "如果一次重测没有重现原始问题，这次结果该写成「证据不足」。让流程能在这里停下来，是放心把下一次任务交给它的前提。",
+      "If the follow-up run cannot reproduce the original conditions, record an inconclusive result. A workflow that can stop there is easier to trust with its next task.",
+      [
+        "一次像素对齐的迁移，仍然漏掉了什么",
+        "What visual parity missed",
+        "她把共享 UI 库迁到 StyleX 时，采样画面看起来一致，内部试用却发现了层叠顺序和全局样式依赖的问题。下一轮每次只迁一个叶子组件，删除样式前先查谁还在使用它。这个改动既缩小了影响范围，也让失败更容易追溯到一个具体选择。",
+        "In a migration to StyleX, captured states looked equivalent. Internal use still revealed stacking problems and consumers of global styles. The next workflow took one leaf component at a time and checked dependencies before removing classes. A failure could then be traced to a much smaller set of decisions."
+      ]
+    ],
+    [
+      "cursor",
+      "2058975157503570132",
+      "2026-05-26",
+      "How I Use Cursor",
+      "当工程经理开始带一组 Agent",
+      "What managing engineers taught her about agents",
+      "https://www.teapawt.net/poteto/article/2058975157503570132",
+      "Lauren 写新人入职时有一个细节：一个会写代码的人，仍然需要了解这个团队怎样排查问题、怎样判断工作已完成。Agent 还有一个额外困难，它在新会话里可能连昨天已经走过的弯路都不知道。",
+      "A capable new engineer still needs to learn how a team investigates problems and decides a change is ready. Tan adds a complication for agents: a fresh session may have no recollection of yesterday’s dead ends.",
+      "她以滚动位置周期性漂移为例，把复现、提出假设、缩小范围和修复后验证串起来。pstack 把这种调查方式留给下一个会话。并行也有明确用途：几条独立调查可以集中回答同一个难题。",
+      "One example involves a scroll position that drifts periodically. Reproduction, competing explanations and a check after the fix give the investigation a shape that the next session can reuse. Parallel investigations can converge on that same difficult question.",
+      "值得记录的一条团队经验，应当能告诉后来的人下一步要看哪个信号。比如「空闲时记录滚动位置」就能帮助一个新会话重新进入现场。",
+      "A reusable team note should identify an observable signal. Recording the scroll position while the interface is idle gives a new session somewhere specific to start.",
+      [
+        "Benny 为什么先开工单",
+        "Why Benny opens a ticket first",
+        "她的维护机器人 Benny 先向反馈者补问复现条件，再查代码、历史记录和已有讨论，把调查结果写进工单。另一个步骤才尝试复现和修复。这个分工保留了一个很实际的出口：看似异常的界面也许正是产品当初设计的样子。",
+        "Benny follows up with the reporter, checks history and earlier discussion, and records what it learned in a ticket. A subsequent step attempts reproduction and repair. The split leaves room for an important discovery: an unexpected interface may be behaving exactly as it was designed to."
+      ]
+    ],
+    [
+      "engineering",
+      "2014823103239749881",
+      "2026-01-24",
+      "Coding is Dead, Long Live Engineering",
+      "从挖矿到铺铁轨：工程师的工作去了哪里？",
+      "From mining ore to laying track",
+      null,
+      "这篇一月的文章有一个重要前提。Lauren 说，如果工程师能搭出足够好用的 Agent，手写语法在交付中的分量就会下降。她把自己的体验拿出来讨论：同一个模型放进不同的仓库，能得到的文档、搜索工具和团队经验都不同，最后能做成的事也不同。",
+      "Tan’s January argument starts with a condition: engineers must be able to build agents capable of doing the work. A model working inside one repository may have access to years of design decisions and internal search. Move it into a different environment and the same assignment can go very differently.",
+      "她讲到一位同事，把一个复杂项目的背景教给 Claude，最后解决了一个困扰自己一年多的 bug。这个故事值得追问的地方是：同事究竟知道哪些细节，而这些细节之前为什么很难传给工具？文章给出了个人见闻，没有提供足以比较模型能力的对照实验。",
+      "One colleague, in Tan’s account, taught Claude enough about a difficult project to solve a bug that had resisted investigation for more than a year. The interesting question is what the colleague knew and how that knowledge became usable by a tool. The story gives us a concrete case, with no controlled comparison of model performance.",
+      "和九月那篇题名相近的文章放在一起读，会看到两个问题。一月的 Lauren 关心谁来设计生产系统，九月的她关心人对亲手编程的那份感情。",
+      "Pair this with the similarly titled September essay. January asks who designs the production system. September asks what someone who loved making things by hand might miss.",
+      [
+        "《异星工厂》里的玩家还在忙什么",
+        "Why the Factorio player stays busy",
+        "手工采矿被自动化以后，玩家开始铺设铁轨、组织运输、改造产线。一处设计不当，整座工厂依旧会不断停工等待干预。这个类比的力量在于，自动化会把一个设计决定的影响放大；原来只让一个人慢一点的失误，现在可能拖住整条生产线。",
+        "In Factorio, automating a mine gives the player a railway to lay and a production line to redesign. A poorly arranged factory can still demand constant intervention. The analogy suggests a consequence worth watching: a small decision that once slowed one worker can now hold up an entire production line."
+      ]
+    ],
+    [
+      "deepcoding",
+      "2014257661035094246",
+      "2026-01-22",
+      "deepcoding",
+      "在 Agent 写第一行代码之前",
+      "Before the agent writes its first line",
+      null,
+      "同样一句「做一个能工作的原型」，在空项目里和在多年积累的产品里，成本完全不同。前者容许边做边找方向；在后者，Agent 第一次选中的例子可能决定后面一整串实现。Lauren 用 deepcoding 指给上下文排顺序的做法：先提供左右实现的重要证据，再让模型动手。",
+      "A rough destination can be enough for an exploratory prototype. In a mature product, however, the first example an agent finds can influence a whole patch. Tan uses deepcoding for a change in the order of work: put the evidence that should shape the implementation in front of the model while the design is still open.",
+      "React 是她举的例子。假如仓库许多旧组件都滥用 useEffect，让模型搜遍相邻文件，它就很容易把积累下来的技术债误认成团队规范。一个更小、更新、更具代表性的示例，可能比整份搜索结果更有指导价值。决定哪个示例值得信任，本身就需要工程判断。",
+      "Her example is a React codebase full of old components that misuse useEffect. A search through nearby files can make technical debt look like a house convention. A smaller, representative example may be more informative than the full result set. Someone still has to know why that example deserves the model’s attention.",
+      "挑一个曾经返工的改动，找出当时最晚才说清楚的那句话。把它和支持它的一个文件、一个测试放在任务开头，再观察 Agent 在哪一步改变了决定。",
+      "Take a change that needed rework. Find the instruction that arrived too late, pair it with a relevant file or test, and move both to the beginning. Observe which decision changes.",
+      [
+        "她怎样减少准备工作的负担",
+        "How she makes preparation affordable",
+        "她当时做了一个 Claude Code 插件，让独立的子任务去找相关文档、历史改动和团队讨论，再通过提问把关键的缺口补上。留给主任务的是挑选后的材料。这样的准备也有成本，所以文章特意给快速原型留了位置：有时人自己也要先做出点东西，才知道想问什么。",
+        "Her Claude Code plugin used separate searches for documents, changes and discussions, then asked questions to fill the gaps. The main task received a selection of relevant material. Preparing that selection costs time, which helps explain why Tan leaves space for quick prototypes when even the person commissioning the work is still exploring."
+      ]
+    ]
+  ],
+  "timeline": [
+    [
+      "2015–2017",
+      "Ember 社区",
+      "The Ember community",
+      "2015 年在 EmberConf 首次做大会演讲。到 2017 年，她与 Offir Golan 在 EmberFest 介绍 Netflix 如何用 Ember 建设内容制作工具。",
+      "She gave her first conference talk at EmberConf in 2015. In 2017 she and Offir Golan presented Netflix’s use of Ember for studio tools at EmberFest.",
+      "EmberFest",
+      "https://emberfest.eu/2017/schedule/"
+    ],
+    [
+      "Netflix",
+      "制片团队的工程与管理",
+      "Engineering for the studio",
+      "她在个人简介中回顾，自己先负责 Studio Programming 的技术工作，后来在 UI Engineering 团队担任工程经理。",
+      "In her own account, she led engineering for Studio Programming before managing a team in the UI Engineering organization.",
+      "Lauren Tan · About.me",
+      "https://about.me/lauren.tan"
+    ],
+    [
+      "2024 · Meta",
+      "React Compiler",
+      "React Compiler",
+      "Lauren 署名发布 React Compiler Beta 公告，同年在 React Conf 展示编译器的实际用法。",
+      "Tan wrote the React Compiler beta announcement and presented a practical compiler session at React Conf that year.",
+      "React",
+      "https://react.dev/blog/2024/10/21/react-compiler-beta-release"
+    ],
+    [
+      "2026 · Cursor",
+      "pstack",
+      "pstack",
+      "她在《How I Use Cursor》里公开了从实际调试工作发展出来的 pstack，并解释自己如何组织多个 Agent 的调查。",
+      "In How I Use Cursor, she shared pstack and explained how debugging work shaped the way she coordinated agents.",
+      "Lauren Tan · X",
+      "https://x.com/poteto/status/2058975157503570132"
+    ],
+    [
+      "2026 · SpaceXSI",
+      "Grok Bot",
+      "Grok Bot",
+      "AI Engineer CODE 的讲者页将她列为 Principal Engineer。她在演讲中用 Grok Bot 团队的实践解释如何审查运行证据。",
+      "AI Engineer CODE lists her as a Principal Engineer. Her talk draws on the Grok Bot team’s practice of reviewing evidence from running software.",
+      "AI Engineer",
+      "https://ai.engineer/code/2026/talks/lauren-tan"
+    ]
+  ]
+}

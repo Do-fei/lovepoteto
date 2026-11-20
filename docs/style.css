@@ -1,0 +1,135 @@
+:root{--paper:#fffaf0;--ink:#3d292b;--rose:#923f52;--line:#d8c7ae;--mute:#6d5954;--serif:"Iowan Old Style","Baskerville","Songti SC","Noto Serif CJK SC",Georgia,serif}
+*{box-sizing:border-box}html{scroll-padding-top:1rem}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 "Avenir Next","PingFang SC",system-ui,sans-serif}a{color:inherit;text-underline-offset:.23em}a:hover{color:var(--rose)}a:focus-visible,summary:focus-visible{outline:3px solid var(--rose);outline-offset:4px}header,footer{width:min(1160px,92%);margin:auto;display:flex;align-items:center;gap:2rem;padding:1.15rem 0}header{border-bottom:1px solid var(--line)}.brand{font:italic bold 1.55rem var(--serif);text-decoration:none;white-space:nowrap}.brand b{color:var(--rose);font:1.2rem Georgia;margin-right:.35rem}nav{display:flex;gap:1.5rem;margin-left:auto}nav a,.lang a{text-decoration:none;font-size:.94rem}.lang{border:1px solid #bc9d90;border-radius:30px;padding:3px;display:inline-flex;white-space:nowrap}.lang a{padding:.13rem .65rem}.lang [aria-current]{background:#583740;color:white;border-radius:20px}.hero{position:relative;isolation:isolate;overflow:hidden;text-align:center;margin:1rem auto 0;width:min(1320px,96%);padding:clamp(2.1rem,4vw,4.2rem) 1rem 2.5rem;border:1px solid #dfc4ae;border-radius:48% 48% 1.3rem 1.3rem / 8% 8% 1.3rem 1.3rem;background:radial-gradient(ellipse at 50% 36%,#fff5db 5%,transparent 65%),repeating-linear-gradient(93deg,#f7e9ddaa 0 1px,transparent 1px 12px),#f8e8dd}.halo{width:min(525px,90vw);height:clamp(185px,23vw,255px);position:relative;margin:auto;display:grid;place-items:center}.halo:before,.halo:after{content:"";position:absolute;z-index:-1;width:95%;height:64%;border:1px solid #c28d77;border-radius:50%;transform:rotate(-14deg)}.halo:after{width:82%;height:92%;transform:rotate(16deg);border-style:dashed;opacity:.6}.portrait{width:clamp(174px,21vw,242px);aspect-ratio:1;border-radius:50%;background:#bde5f1 url(assets/portrait.jpg) center 49.65%/120% auto no-repeat;outline:1px solid #9a695c;outline-offset:5px;box-shadow:0 0 0 12px #fff5e5,0 16px 28px #87594d29}.star{position:absolute;color:#a44e59;font-family:Georgia;font-size:2.15rem}.s1{left:8%;top:24%}.s2{right:9%;bottom:15%;font-size:1.7rem}.s3{right:18%;top:1%;font-size:1.2rem}.hero h1{font:normal clamp(4.3rem,9vw,8rem)/.98 var(--serif);letter-spacing:-.064em;margin:1.1rem 0 .85rem}.hero h1 i{font-weight:normal;color:var(--rose)}.hero p{margin:.5rem auto 1.25rem;color:var(--mute);letter-spacing:.06em}.button{display:inline-block;padding:.55rem 1.35rem;border-radius:30px;background:#783849;color:white;text-decoration:none}.button:hover{background:#592b36;color:white}.section{width:min(1030px,88%);margin:clamp(3rem,6vw,6rem) auto}.section h2,.reading h1{font:normal clamp(2.25rem,4.4vw,3.9rem)/1.18 var(--serif);letter-spacing:-.04em;margin:.25rem 0 1.2rem}.kicker,time,.meta{color:var(--mute);font-size:.86rem;letter-spacing:.035em}.section-head{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--line)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 2rem}.card{display:block;text-decoration:none;padding:1.25rem .25rem;border-bottom:1px solid var(--line)}.card strong,summary strong{display:block;font:600 1.45rem/1.4 var(--serif);margin:.35rem 0}.card small{color:var(--mute);font-size:.95rem}.talks details{border-bottom:1px solid var(--line);padding:1rem 0}.talks summary{cursor:pointer}.talks summary strong{display:block;font-size:1.32rem}.talks p{max-width:70ch;color:var(--mute)}.timeline{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem 2.5rem}.timeline article{border-left:2px solid #c99485;padding:0 1.2rem}.timeline h3{font:600 1.4rem var(--serif);margin:.35rem 0}.timeline p{margin:.4rem 0}.reading{width:min(700px,89%);margin:3rem auto 5rem}.reading h1{margin:.8rem 0}.reading h2{font:600 1.6rem var(--serif);margin:2.25rem 0 .5rem}.reading p{font-size:1.1rem;line-height:1.95}.editor{padding:.2rem 1.3rem 1rem;background:#f3e8d6;border-left:3px solid #bd8a54;margin:2rem 0}.editor h2{margin:1rem 0 .2rem}.source{display:flex;gap:1.2rem;flex-wrap:wrap}.chapter{display:inline-block;margin:0 .8rem .6rem 0}footer{justify-content:space-between;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}footer p{margin:.35em 0}
+@media(max-width:650px){header{gap:.55rem;flex-wrap:wrap}header nav{order:3;width:100%;justify-content:space-between;margin-top:.3rem}.lang{margin-left:auto}.hero{width:95%;padding:1.9rem .6rem 1.65rem}.hero p{font-size:.92rem}.cards,.timeline{grid-template-columns:1fr}.section{width:89%}.section-head{align-items:flex-end}.section-head .meta{margin-bottom:1rem}footer{align-items:flex-start;flex-direction:column;gap:.25rem}}
+
+.cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.5;
+  object-fit: contain;
+  background: #f1e7d7;
+  border-radius: .55rem;
+}
+.card .cover { margin-bottom: .85rem; }
+.reading .cover { margin: 1.25rem 0 2rem; }
+.talks summary {
+  display: grid;
+  grid-template-columns: clamp(6.5rem, 18vw, 13.5rem) 1fr auto;
+  align-items: center;
+  gap: clamp(.7rem, 2vw, 1.6rem);
+  list-style: none;
+}
+.talks summary::-webkit-details-marker { display: none; }
+.talks summary::after { content: '+'; font-size: 1.35rem; color: var(--rose); }
+.talks details[open] summary::after { content: '−'; }
+.talks .cover { aspect-ratio: 16/9; object-fit: cover; }
+.section-head:has(#life) { flex-wrap: wrap; gap: .25rem 1rem; margin-bottom: 1.2rem; }
+@media (max-width: 650px) {
+  .talks summary strong { font-size: 1.06rem; }
+  .section-head:has(#life) { display: block; }
+  .section-head:has(#life) h2 { margin-bottom: .35rem; }
+  .section-head:has(#life) .meta { display: block; margin-bottom: .7rem; }
+}
+
+/* The cover illustration stays behind the portrait and clear of the text. */
+:root {
+  --paper: #fffaf3;
+  --ink: #3c2a32;
+  --rose: #95425e;
+  --line: #dec8bf;
+}
+body { background: radial-gradient(ellipse at top left, #fff3ee, transparent 46rem), var(--paper); }
+header { border-color: #e5c9c6; }
+.hero {
+  width: min(1440px, 96%);
+  padding: clamp(1.8rem, 3.5vw, 3.5rem) 1rem 2.25rem;
+  border: 1px solid #c99b87;
+  border-radius: 1.35rem;
+  box-shadow: 0 5px 0 #f3dfd0, 0 9px 22px #693d3220;
+  background: #fff0df url(assets/sakura-cinema.jpg) center center / cover no-repeat;
+}
+.halo { width: min(400px, 80%); height: clamp(155px, 16vw, 205px); }
+.halo::before { width: 77%; height: 75%; border-color: #b77975; }
+.halo::after { width: 80%; height: 71%; border-color: #a97079; }
+.portrait {
+  width: clamp(145px, 15.2vw, 192px);
+  outline: 2px solid #ad7782;
+  outline-offset: 5px;
+  box-shadow: 0 0 0 10px #fff9eb, 0 12px 17px #79513f40;
+}
+.hero h1 { font-size: clamp(4rem, 8vw, 7.3rem); margin: .85rem 0 .2rem; color: #492e34; }
+.hero h1 i { color: #92405a; }
+.hero p { letter-spacing: .01em; color: #51363b; margin: .4rem auto 1rem; }
+.hero-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .65rem; }
+.button { border: 1px solid #7d3f51; font-size: .96rem; box-shadow: 0 2px 0 #61354430; }
+.button.pale { color: #6e3447; background: #fff8ef; }
+.button.pale:hover { background: #f5dfe1; }
+.section-head { border-bottom: 2px dotted #dab9b1; }
+.section h2, .cinema-index h1, .reading h1 { color: #54313c; }
+.cinema-index { width: min(1120px, 90%); margin: 2rem auto 6rem; }
+.room-title {
+  padding: clamp(1.8rem, 4vw, 3.5rem);
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: linear-gradient(90deg, #fff2e5 8%, #fff2e5f0 52%, #fff2e500 80%), url(assets/sakura-cinema.jpg) right center / auto 100% no-repeat #fff2e5;
+}
+.room-title h1 { font: normal clamp(2.7rem, 6vw, 5rem)/1.08 var(--serif); margin: 0 0 .75rem; letter-spacing: -.05em; }
+.room-title p { max-width: min(62%, 42rem); margin: 0; }
+.years { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.2rem 0 1.8rem; }
+.years a { font-variant-numeric: tabular-nums; border: 1px solid #c796a1; border-radius: 2rem; padding: .3rem .8rem; }
+.years a:hover { background: #f8e2e5; }
+.film-year { margin: 2.5rem 0; }
+.film-year h2 { margin: 0 0 1rem; font: italic 2.4rem var(--serif); color: #85435a; }
+.film-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.section.talks .film-grid { margin-top: 1.2rem; }
+.film-card {
+  min-width: 0; display: block; padding: .55rem .55rem 1rem; border: 1px solid #dec6bb;
+  border-radius: 12px; background: #fffdf8; text-decoration: none;
+  box-shadow: 0 3px 0 #eeded3; transition: transform .15s ease, border-color .15s ease;
+}
+.film-card:hover { transform: translateY(-2px); border-color: #bd8596; }
+.film-card strong { display: block; font: 600 clamp(1.12rem, 2vw, 1.5rem)/1.23 var(--serif); margin: .35rem .3rem 0; overflow-wrap: anywhere; }
+.film-event { display: block; font-size: .87rem; color: #69525a; margin: .7rem .3rem .25rem; }
+.film-still, .film-poster { position: relative; display: block; }
+.film-still .cover, .film-poster .cover { aspect-ratio: 16/9; object-fit: cover; border-radius: 7px; }
+.play {
+  position: absolute; display: grid; place-items: center; right: .55rem; bottom: .55rem;
+  width: 2rem; height: 2rem; border-radius: 50%; background: #462c38d9; border: 1px solid #fff8; color: white; font-size: .82rem;
+}
+.film-reading .film-event { margin: 1.6rem 0 .5rem; font-size: 1rem; }
+.film-reading .cover { margin: 1.3rem 0 0; }
+.film-reading h1 { font-size: clamp(2.35rem, 5.5vw, 3.9rem); }
+.cue-list { margin: 1rem 0 1.7rem; padding: 0; list-style: none; }
+.cue-list li { border-top: 1px dashed #d8bab7; }
+.cue-list a { display: flex; align-items: baseline; gap: 1rem; padding: .8rem .25rem; text-decoration: none; }
+.cue-list b { color: #813e57; min-width: 4rem; font-variant-numeric: tabular-nums; }
+.cue-list i { margin-left: auto; font-size: .8rem; color: #94566a; }
+@media (max-width: 880px) {
+  .film-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero { background-size: 100% auto; background-position: center bottom; }
+  .hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to bottom, #fff1de 0%, #fff1de00 63%); }
+  .room-title p { max-width: 79%; }
+}
+@media (max-width: 620px) {
+  .section.talks .film-grid, .film-grid { grid-template-columns: 1fr; }
+  .film-card { display: grid; grid-template-columns: 34% 1fr; align-content: start; gap: .15rem .55rem; padding: .5rem; }
+  .film-still { grid-row: span 2; align-self: center; }
+  .film-card .film-event { margin: 0 .2rem; }
+  .film-card strong { margin: 0 .2rem .2rem; }
+  .hero { padding: 1.45rem .8rem 2rem; }
+  .hero p { max-width: 23rem; font-size: .95rem; }
+  .room-title { background-image: linear-gradient(90deg,#fff2e5 4%,#fff2e5db 80%),url(assets/sakura-cinema.jpg); }
+  .room-title p { max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) { .film-card { transition: none; } }
+.runtime {
+  position: absolute; right: .35rem; bottom: .35rem; padding: .05rem .35rem;
+  border-radius: .25rem; color: white; background: #382d35e6;
+  font-size: .78rem; font-variant-numeric: tabular-nums;
+}
+.film-reading .original-title { margin-top: .25rem; color: var(--mute); font-size: 1rem; }
+.film-reading .edition {
+  padding: .7rem 1rem; border-left: 3px solid #c98999; background: #fcf0eb;
+  color: #65434e; font-size: .95rem;
+}
